@@ -21,7 +21,8 @@ while True:
 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_d]:
-        x1 += 5
+        if x1 + 5 < 800- 50:
+            x1 += 5
     if keys[pygame.K_a]:
         x1 -= 5
     if keys[pygame.K_DOWN]:
